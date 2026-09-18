@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Särk – Shine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="pais">
+    <div class="konteiner">
+      <a href="index.html" class="logo">SHINE</a>
+      <nav aria-label="Peamenüü">
+        <ul class="menuu">
+          <li><a href="index.html#uued">Uued tooted</a></li>
+          <li><a href="#">Särgid ja pluusid</a></li>
+          <li><a href="#">Kleidid</a></li>
+          <li><a href="#">Allahindlus</a></li>
+        </ul>
+      </nav>
+      <a href="korv.html" class="korvi-link">Korv <span class="korvi-arv">2</span></a>
+    </div>
+  </header>
+
+  <main class="konteiner">
+    <nav class="asukoht" aria-label="Asukoht">
+      <a href="index.html">Avaleht</a> / <a href="#">Särgid ja pluusid</a> / Särk
+    </nav>
+
+    <form class="toode" action="korv.html">
+      <div>
+        <div class="pilt toote-pilt">Särk (valitud värvis)</div>
+        <div class="pisipildid">
+          <div class="pilt">Eestvaade</div>
+          <div class="pilt">Tagantvaade</div>
+          <div class="pilt">Detailid...</div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Särk</h1>
+        <p class="hind">9999,90 €</p>
+        <p class="kirjeldus">Kvaliteetne ja hingav 200% linasest kangast särk. Sobib nii kontorisse kui ka koju.</p>
+
+        <fieldset>
+          <legend>Värv</legend>
+          <div class="valikud">
+            <input type="radio" name="varv" id="v-beez" value="beez" checked>
+            <label for="v-beez">Beež</label>
+
+            <input type="radio" name="varv" id="v-liiv" value="liiv">
+            <label for="v-liiv">Virsik</label>
+
+            <input type="radio" name="varv" id="v-sinine" value="sinine">
+            <label for="v-sinine">Hallsinine</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Suurus</legend>
+          <div class="valikud">
+            <input type="radio" name="suurus" id="s-xs" value="XS">
+            <label for="s-xs">XS</label>
+            <input type="radio" name="suurus" id="s-s" value="S">
+            <label for="s-s">S</label>
+            <input type="radio" name="suurus" id="s-m" value="M" checked>
+            <label for="s-m">M</label>
+            <input type="radio" name="suurus" id="s-l" value="L">
+            <label for="s-l">L</label>
+            <input type="radio" name="suurus" id="s-xl" value="XL">
+            <label for="s-xl">XL</label>
+          </div>
+          <p><a href="#">Suurused</a></p>
+        </fieldset>
+
+        <div class="kogus">
+          <label for="kogus">Kogus</label>
+          <input type="number" id="kogus" name="kogus" value="1" min="1" max="10">
+        </div>
+
+        <button type="submit" class="nupp">Lisa korvi</button>
+
+        <div class="toote-info">
+          <details open>
+            <summary>Tootekirjeldus</summary>
+            <ul>
+              <li>Print seljal</li>
+              <li>Lühikesed varrukad</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Materjal ja hooldus</summary>
+            <p>200% lina. Pesta 10000 °C juures.</p>
+          </details>
+          <details>
+            <summary>Tarne ja tagastus</summary>
+            <p>Tagastada ei saa.</p>
+          </details>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <footer class="jalus">
+    <div class="konteiner">
+      <div>
+        <h2>Shine</h2>
+        <p>Naisteriided ilusatele naistele.</p>
+      </div>
+      <div>
+        <h2>Klienditugi</h2>
+        <ul>
+          <li><a href="#">Tarne ja tagastus</a></li>
+          <li><a href="#">Suurused</a></li>
+          <li><a href="#">KKK</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Kontakt</h2>
+        <p>hehehe@shine.ee<br>+372 0000 0000</p>
+      </div>
+      <p class="autorioigus">© 2026 Shine. tere.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

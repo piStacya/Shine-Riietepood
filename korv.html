@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ostukorv – Shine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="pais">
+    <div class="konteiner">
+      <a href="index.html" class="logo">SHINE</a>
+      <nav aria-label="Peamenüü">
+        <ul class="menuu">
+          <li><a href="index.html#uued">Uued tooted</a></li>
+          <li><a href="#">Särgid ja pluusid</a></li>
+          <li><a href="#">Kleidid</a></li>
+          <li><a href="#">Allahindlus</a></li>
+        </ul>
+      </nav>
+      <a href="korv.html" class="korvi-link" aria-current="page">Korv <span class="korvi-arv">2</span></a>
+    </div>
+  </header>
+
+  <main class="konteiner">
+    <nav class="asukoht" aria-label="Asukoht">
+      <a href="index.html">Avaleht</a> / Ostukorv
+    </nav>
+
+    <div class="korv">
+      <h1>Ostukorv</h1>
+
+      <section aria-label="Tooted korvis">
+        <ul class="korvi-tooted">
+          <li class="korvi-rida">
+            <div class="pilt">Särk</div>
+            <div>
+              <h2><a href="toode.html">Särk</a></h2>
+              <p class="detailid">Värv: beež, Suurus: M</p>
+              <label class="detailid">Kogus
+                <input type="number" value="1" min="1" max="10" class="kogus-vali">
+              </label>
+            </div>
+            <div class="parem">
+              <p class="hind">9999,90 €</p>
+              <button type="button" class="eemalda">Eemalda</button>
+            </div>
+          </li>
+
+          <li class="korvi-rida">
+            <div class="pilt">Kootud kampsun</div>
+            <div>
+              <h2>Kootud kampsun</h2>
+              <p class="detailid">Värv: Virsik, Suurus: S</p>
+              <label class="detailid">Kogus
+                <input type="number" value="1" min="1" max="10" class="kogus-vali">
+              </label>
+            </div>
+            <div class="parem">
+              <p class="hind">2,90 €</p>
+              <button type="button" class="eemalda">Eemalda</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <aside class="kokkuvote" aria-label="Tellimuse kokkuvõte">
+        <h2>Kokkuvõte</h2>
+        <dl>
+          <dt>Tooted (2)</dt>
+          <dd>10002.8 €</dd>
+          <dt>Tarne</dt>
+          <dd>Tasuta</dd>
+          <dt class="kokku">Kokku</dt>
+          <dd class="kokku">10002.8 €</dd>
+        </dl>
+        <a href="#" class="nupp">Vormista tellimus</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="jalus">
+    <div class="konteiner">
+      <div>
+        <h2>Shine</h2>
+        <p>Naisteriided ilusatele naistele.</p>
+      </div>
+      <div>
+        <h2>Klienditugi</h2>
+        <ul>
+          <li><a href="#">Tarne ja tagastus</a></li>
+          <li><a href="#">Suurused</a></li>
+          <li><a href="#">KKK</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Kontakt</h2>
+        <p>hehehe@shine.ee<br>+372 0000 0000</p>
+      </div>
+      <p class="autorioigus">© 2026 Shine. tere.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

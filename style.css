@@ -1,0 +1,509 @@
+/* Värvid */
+:root {
+  --liiv: #EEC089;
+  --beez: #D7D0B6;
+  --hall: #8A9DA4;
+  --tume: #4B4D63;
+  --valge: #FFFDF8;
+  --raadius: 8px;
+  --laius: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--tume);
+  background: var(--valge);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--tume);
+}
+
+img {
+  max-width: 100%;
+}
+
+.konteiner {
+  max-width: var(--laius);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Ühised stiilireglid: */
+.logo,
+.menuu a,
+.korvi-link,
+.kaart-link,
+.asukoht a,
+.korvi-rida h2 a,
+.nupp {
+  text-decoration: none;
+}
+
+.pilt,
+.valikud label,
+.kogus input,
+.kogus-vali {
+  border: 2px solid var(--hall);
+  border-radius: var(--raadius);
+}
+
+.pais {
+  background: var(--tume);
+  color: var(--valge);
+}
+
+.pais .konteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--liiv);
+}
+
+.menuu {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.menuu a,
+.korvi-link {
+  color: var(--valge);
+}
+
+.menuu a:hover,
+.menuu a:focus {
+  color: var(--liiv);
+}
+
+.korvi-arv {
+  font-weight: 700;
+}
+
+.nupp {
+  display: inline-block;
+  background: var(--liiv);
+  color: var(--tume);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 28px;
+  border: 2px solid var(--liiv);
+  border-radius: var(--raadius);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nupp:hover,
+.nupp:focus {
+  background: var(--valge);
+}
+
+.pilt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 3 / 4;
+  background: var(--beez);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.avaplokk {
+  background: var(--beez);
+  padding: 80px 0;
+}
+
+.avaplokk .konteiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.avaplokk h1 {
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.avaplokk p {
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+}
+
+.avaplokk .pilt {
+  background: var(--hall);
+  border-color: var(--tume);
+  aspect-ratio: 4 / 3;
+}
+
+.sektsioon {
+  padding: 60px 0;
+}
+
+.sektsioon h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tooted {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  list-style: none;
+}
+
+.kaart h3 {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.kaart .hind {
+  font-weight: 600;
+}
+
+.kaart-link {
+  display: block;
+}
+
+.kaart-link .pilt {
+  transition: transform 0.2s;
+}
+
+.kaart-link:hover .pilt,
+.kaart-link:focus .pilt {
+  transform: translateY(-4px);
+  border-color: var(--tume);
+}
+
+.vaata {
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.eelised {
+  background: var(--beez);
+}
+
+.eelised ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  list-style: none;
+  text-align: center;
+}
+
+.eelised li {
+  background: var(--valge);
+  padding: 24px;
+  border-radius: var(--raadius);
+}
+
+.eelised strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.asukoht {
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+.toode {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding-bottom: 60px;
+}
+
+.toode h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.toode .hind {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 10px 0 20px;
+}
+
+.toode .kirjeldus {
+  margin-bottom: 24px;
+}
+
+.toode fieldset {
+  border: none;
+  margin-bottom: 24px;
+}
+
+.toode legend {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.valikud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.valikud input {
+  position: absolute;
+  opacity: 0;
+}
+
+.valikud label {
+  cursor: pointer;
+  padding: 8px 16px;
+  min-width: 48px;
+  text-align: center;
+}
+
+.valikud input:checked + label {
+  border-color: var(--tume);
+  background: var(--tume);
+  color: var(--valge);
+}
+
+.valikud input:focus-visible + label {
+  outline: 3px solid var(--liiv);
+  outline-offset: 2px;
+}
+
+.toote-pilt {
+  font-size: 1.1rem;
+}
+
+.pisipildid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.pisipildid .pilt {
+  aspect-ratio: 1;
+  font-size: 0.8rem;
+}
+
+.kogus {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.kogus input {
+  width: 70px;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.toote-info {
+  margin-top: 30px;
+  border-top: 1px solid var(--hall);
+}
+
+.toote-info details {
+  border-bottom: 1px solid var(--hall);
+  padding: 14px 0;
+}
+
+.toote-info summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.toote-info details p,
+.toote-info details ul {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.korv {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding-bottom: 60px;
+}
+
+.korv h1 {
+  grid-column: 1 / -1;
+  font-size: 2rem;
+}
+
+.korvi-tooted {
+  list-style: none;
+}
+
+.korvi-rida {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--hall);
+}
+
+.korvi-rida .pilt {
+  font-size: 0.7rem;
+}
+
+.korvi-rida h2 {
+  font-size: 1.1rem;
+}
+
+.korvi-rida .detailid {
+  font-size: 0.9rem;
+}
+
+.korvi-rida .parem {
+  text-align: right;
+}
+
+.korvi-rida .hind {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.kogus-vali {
+  width: 60px;
+  padding: 4px 6px;
+  margin-left: 6px;
+}
+
+.eemalda {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  color: var(--tume);
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-top: 6px;
+}
+
+.kokkuvote {
+  background: var(--beez);
+  padding: 28px;
+  border-radius: var(--raadius);
+}
+
+.kokkuvote h2 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+.kokkuvote dl {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.kokkuvote dd {
+  text-align: right;
+}
+
+.kokkuvote .kokku {
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-top: 8px;
+}
+
+.kokkuvote .nupp {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.jalus {
+  background: var(--tume);
+  color: var(--valge);
+  padding: 40px 0 20px;
+  font-size: 0.9rem;
+}
+
+.jalus .konteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.jalus h2 {
+  font-size: 1rem;
+  color: var(--liiv);
+  margin-bottom: 8px;
+}
+
+.jalus a {
+  color: var(--valge);
+}
+
+.jalus ul {
+  list-style: none;
+}
+
+.autorioigus {
+  grid-column: 1 / -1;
+  text-align: center;
+  border-top: 1px solid var(--hall);
+  padding-top: 16px;
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .menuu {
+    display: none; 
+  }
+
+  .avaplokk .konteiner,
+  .toode,
+  .korv,
+  .jalus .konteiner {
+    grid-template-columns: 1fr;
+  }
+
+  .avaplokk {
+    padding: 40px 0;
+  }
+
+  .avaplokk h1 {
+    font-size: 2rem;
+  }
+
+  .tooted {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .eelised ul {
+    grid-template-columns: 1fr;
+  }
+
+  .korvi-rida {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .korvi-rida .parem {
+    grid-column: 2;
+    text-align: left;
+  }
+}
