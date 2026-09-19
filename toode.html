@@ -8,24 +8,36 @@
 </head>
 <body>
 
+  <p class="soodusriba">−20% kõigilt kleitidelt! Kasuta koodi <strong>hehehe2026</strong></p>
+
   <header class="pais">
     <div class="konteiner">
       <a href="index.html" class="logo">SHINE</a>
       <nav aria-label="Peamenüü">
         <ul class="menuu">
           <li><a href="index.html#uued">Uued tooted</a></li>
-          <li><a href="#">Särgid ja pluusid</a></li>
-          <li><a href="#">Kleidid</a></li>
           <li><a href="#">Allahindlus</a></li>
         </ul>
       </nav>
-      <a href="korv.html" class="korvi-link">Korv <span class="korvi-arv">2</span></a>
+      <div class="pais-lingid">
+        <a href="#">Konto</a>
+        <a href="korv.html" class="korvi-link">Korv <span class="korvi-arv">2</span></a>
+      </div>
     </div>
   </header>
+  <nav class="kategooriad" aria-label="Kategooriad">
+    <ul class="konteiner">
+      <li><a href="index.html#uued">Kõik</a></li>
+      <li><a href="#" class="aktiivne">Särgid</a></li>
+      <li><a href="#">Kampsunid</a></li>
+      <li><a href="#">Seelikud</a></li>
+      <li><a href="#">Kleidid</a></li>
+    </ul>
+  </nav>
 
   <main class="konteiner">
     <nav class="asukoht" aria-label="Asukoht">
-      <a href="index.html">Avaleht</a> / <a href="#">Särgid ja pluusid</a> / Särk
+      <a href="index.html">Avaleht</a> / <a href="#">Särgid</a> / Särk
     </nav>
 
     <form class="toode" action="korv.html">
@@ -101,7 +113,6 @@
       </div>
     </form>
   </main>
-
   <footer class="jalus">
     <div class="konteiner">
       <div>
@@ -119,10 +130,24 @@
       <div>
         <h2>Kontakt</h2>
         <p>hehehe@shine.ee<br>+372 0000 0000</p>
+        <h2 class="sotsiaal">Jälgi meid</h2>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Tiktok</a></li>
+        </ul>
       </div>
+      <form class="uudiskiri">
+        <h2>Uudiskiri</h2>
+        <p>Liitu meie uudiskirjaga ja saa esimesena teada uutest toodetest ja soodustustest.</p>
+        <label for="epost">E-post</label>
+        <div class="uudiskiri-rida">
+          <input type="email" id="epost" name="epost" placeholder="nimi@näide.ee" required>
+          <button type="submit" class="nupp">Liitu</button>
+        </div>
+      </form>
       <p class="autorioigus">© 2026 Shine. tere.</p>
     </div>
   </footer>
-
 </body>
 </html>
