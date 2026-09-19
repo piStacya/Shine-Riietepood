@@ -39,7 +39,7 @@ img {
 /* Ühised stiilireglid: */
 .logo,
 .menuu a,
-.korvi-link,
+.pais-lingid a,
 .kaart-link,
 .asukoht a,
 .korvi-rida h2 a,
@@ -50,7 +50,8 @@ img {
 .pilt,
 .valikud label,
 .kogus input,
-.kogus-vali {
+.kogus-vali,
+.uudiskiri input {
   border: 2px solid var(--hall);
   border-radius: var(--raadius);
 }
@@ -82,8 +83,13 @@ img {
 }
 
 .menuu a,
-.korvi-link {
+.pais-lingid a {
   color: var(--valge);
+}
+
+.pais-lingid {
+  display: flex;
+  gap: 20px;
 }
 
 .menuu a:hover,
@@ -444,7 +450,7 @@ img {
 
 .jalus .konteiner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
@@ -468,6 +474,66 @@ img {
   border-top: 1px solid var(--hall);
   padding-top: 16px;
   margin-top: 10px;
+}
+
+.kategooriad {
+  background: var(--beez);
+}
+
+.kategooriad ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.kategooriad a {
+  display: block;
+  padding: 6px 16px;
+  border-radius: var(--raadius);
+  text-decoration: none;
+}
+
+.kategooriad a:hover,
+.kategooriad a:focus,
+.kategooriad .aktiivne {
+  background: var(--tume);
+  color: var(--valge);
+}
+
+.soodusriba {
+  background: var(--liiv);
+  text-align: center;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+}
+
+.jalus .sotsiaal {
+  margin-top: 10px;
+}
+
+.uudiskiri label {
+  display: block;
+  margin: 8px 0 4px;
+}
+
+.uudiskiri-rida {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.uudiskiri input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px;
+}
+
+.uudiskiri .nupp {
+  padding: 8px 16px;
 }
 
 @media (max-width: 800px) {
